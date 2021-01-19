@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.fixed-container {
+    max-width: 1920px;
+    padding: 0 20px;
+}
+
+input, textarea {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    display: block;
+    list-style: none;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(19,35,7,0.2);
+    margin-bottom: 30px;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: darkgrey;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.delete {
+    font-size: 16px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.delete::after {
+    content: "\2716"
+}
+
+.delete:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+}
+
+.text {
+    color: grey;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.datetime {
+    font-size: 10px;
+    color: lightgrey;
+}
+
+.new-comment {
+    width: 50%;
+    height: 200px;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    background-color: #0540d8;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    outline: none;
+
+}
